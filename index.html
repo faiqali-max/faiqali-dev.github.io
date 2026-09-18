@@ -22,7 +22,8 @@ work effectively with people from diverse backgrounds
         <button class="btn1" onclick="window.open('https://github.com/faiqali-max');">Check out my GitHub!</button>
         <button class="btn2" onclick="window.open('https://faiqali-portfolio.vercel.app');">Check out my Website</button>
 
-    <form class="form" action="https://formsubmit.co/faiqaliimran006@gmail.com.com" method="POST">
+    <form class="form" action="https://formsubmit.co/faiqaliimran006@gmail.com" method="POST">
+        <input type="hidden" name="_next" value="https://faiqali-max.github.io/faiqali-dev.github.io/">
         <p class="form p">Talk To Me</p>
         <input class="form name" type="name" name="name" required placeholder="Your Name Here">
         <input class="form email" type="email" name="email" required placeholder="Your Email Here">
@@ -68,7 +69,9 @@ work effectively with people from diverse backgrounds
             translate: 5px 5px;
             transition: 2000ms;
         }
-        /*color: #101da9;
+
+        .p {
+            color: #101da9;
             font-size: 25px;
             margin: 20px auto;
             padding: 20px;
@@ -78,25 +81,6 @@ work effectively with people from diverse backgrounds
             text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
             flex-direction: column;
             
-            width: 90%;
-            overflow: scroll;
-            border: none;
-            background-color: white;
-            border: 5px solid black;
-            border-radius: 20px;
-            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);  */
-
-        .p {
-            color: #101da9;
-            font-size: 25px;
-            margin: 20px auto;
-            padding: 20px;
-            box-sizing:border-box:
-            justify-content: center;
-            display: flex;
-            text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-            flex-direction: column;
-            align-items: center;
             width: 90%;
             overflow: scroll;
             border: none;
@@ -235,6 +219,11 @@ work effectively with people from diverse backgrounds
         }
 
     </style>
+    <script>
+        document.querySelector('.form').addEventListener('submit', function () {
+            this.reset();
+        });
+    </script>
 </body>
 
 </html>
