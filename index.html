@@ -13,7 +13,7 @@
     <pre class="p">Hey! I'm <span>Faiq Ali</span>
 I'm a Freelancer and also a self-taught developer building my expertise in full-stack web development, generative AI, 
 agentic AI, AI-powered automation, and modern programming languages. My long-term goal is to advance into artificial intelligence 
-and machine learning while developing strong skills in AI engineering, MLOps, DevOps, cybersecurity, and related technologies. 
+and machine learning while developing strong skills in AI engineering, DevOps, cybersecurity, and related technologies. 
 I am committed to continuous learning, practical problem-solving, and creating intelligent, reliable solutions that connect 
 software development with the possibilities of AI. I am also fluent in English, which allows me to communicate ideas clearly and 
 work effectively with people from diverse backgrounds        
@@ -35,21 +35,22 @@ work effectively with people from diverse backgrounds
             background-color: rgb(207, 149, 231);
             font-family: Arial, sans-serif;
             position: relative;
-
-
+            
         }
 
         body {
             text-align: center;
         }
+
         .logo {
             display: block;
+            margin-left: 0%;
             margin: 10px auto;
             width: 80px;
             height: 80px;
         }
+
         .head {
-            
             color: #7e10a9;
             margin: 20px;
             padding: 20px;
@@ -59,17 +60,16 @@ work effectively with people from diverse backgrounds
             display: flex;
             flex-direction: column;
             align-items: center;
-            text-shadow:5px 5px 10px rgba(0, 0, 0, 0.5);
+            text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
         }
 
         .head:hover {
             color: #8240c9;
             translate: 5px 5px;
-            transition:2000ms;
+            transition: 2000ms;
         }
 
         .p {
-            
             color: #101da9;
             font-size: 25px;
             margin: 20px;
@@ -79,68 +79,67 @@ work effectively with people from diverse backgrounds
             text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
             flex-direction: column;
             align-items: center;
-            border:none;
+            width: 90%;
+            overflow: scroll;
+            border: none;
             background-color: white;
-            border:5px solid black;
-            border-radius:20px;
-            box-shadow:10px 10px 20px rgba(0,0,0,0.5);
+            border: 5px solid black;
+            border-radius: 20px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
         }
+
         .p span {
             font-size: 35px;
             box-shadow: 5px5px 5px rgba(0, 0, 0, 0.5);
-            background-color:white;
+            background-color: white;
             color: solid black;
         }
 
         .p:hover {
             color: red;
             translate: 5px 5px;
-            transition:2000ms;
+            transition: 2000ms;
         }
-        .p span:hover{
+
+        .p span:hover {
             color: green;
             translate: 5px 5px;
-            transition:2000ms;
+            transition: 2000ms;
         }
-        .btn1{
+
+        .btn1,
+        .btn2 {
             border: none;
             background-color: #8240c9;
             color: white;
-            margin:20px;
+            margin: 20px;
             padding: 15px 30px;
             font-size: 16px;
-            border: 2px #f2e9ff;
             box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
             border-radius: 20px;
             cursor: pointer;
         }
-        .btn1:hover{
-            color:#8240c9;
+
+        .btn1 {
+            border: 2px #f2e9ff;
+        }
+
+        .btn1:hover {
+            color: #8240c9;
             background-color: #f2e9ff;
             border-color: #8240c9;
             translate: 5px 5px;
-            transition:2000ms;
+            transition: 2000ms;
         }
-        .btn2{
-            border: none;
-            background-color: #8240c9;
-            color: white;
-            margin:20px;
-            padding: 15px 30px;
-            font-size: 16px;
-            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-            border-radius: 20px;
-            cursor: pointer;
-        }
-        .btn2:hover{
-             color:#8240c9;
+
+        .btn2:hover {
+            color: #8240c9;
             background-color: #f2e9ff;
             translate: 5px 5px;
-            transition:2000ms;
-                    }
+            transition: 2000ms;
+        }
 
         form {
-            
             display: flex;
             flex-direction: column;
             background-color: white;
@@ -155,105 +154,65 @@ work effectively with people from diverse backgrounds
             width: 400px;
             text-align: center;
             box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-            }
-        .form:hover{
-            translate:5px 5px;
-            transition: 2000ms;
-            
         }
+
+        .form:hover {
+            translate: 5px 5px;
+            transition: 2000ms;
+        }
+
         .form .p {
-            color:#8240c9;
+            color: #8240c9;
             font-size: 35px;
             font-weight: bold;
-            text-shadow:5px 5px 5px rgba(0, 0, 0, 0.5);
-            background-color: white;
-            }
-        .form.p:hover{
-            translate:5px 5px;
-            transition: 2000ms;
-        }
-        .form .name {
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            font-style:bold ;
-            font-size:large;
-            margin: 10px;
-            color: #f2e9ff;
-            padding: 10px;
-            background-color: #8240c9;
+            width: 50%;
+            border-radius: 15px;
             text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-            height: 10%;
-            width: 60%;
-            border-radius: 5px;
-            border: 2px black;
-            }
-        .form.name:hover{
-            translate:5px 5px;
-            transition: 2000ms;
+            background-color: white;
         }
-        .form .email {
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            font-style:bold ;
-            font-size:large;
-            margin: 10px;
-            padding: 10px;
-            color: #f2e9ff;
-            background-color: #8240c9;
-            height: 10%;
-            width: 60%;
-            text-shadow:5px 5px 5px rgba(0, 0, 0, 0.5);
-            border-radius: 5px;
-            border: 2px black;
-            }
-        .form.email:hover{
-            translate:5px 5px;
-            transition: 2000ms;
-        }
+
+        .form .name,
+        .form .email,
         .form .text {
             align-items: center;
             justify-content: center;
             text-align: center;
-            font-style:bold ;
-            font-size:large;
+            font-size: large;
             margin: 10px;
             padding: 10px;
             color: #f2e9ff;
-            height: 20%;
-            width: 60%;
-            text-shadow:5px 5px 5px rgba(0, 0, 0, 0.5);
-            border-radius: 5px;
             background-color: #8240c9;
+            height: 10%;
+            width: 60%;
+            text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
             border: 2px black;
-            }
-        .form.text:hover{
-            translate:5px 5px;
-            transition: 2000ms;
         }
+
+        .form .text {
+            height: 20%;
+        }
+
         .form .button {
             align-items: center;
             justify-content: center;
             text-align: center;
-            font-style:bold ;
-            font-size:large;
             margin: 10px;
             padding: 10px;
             color: #f2e9ff;
             font-size: 30px;
             background-color: #8240c9;
-            text-shadow:5px 5px 5px rgba(0, 0, 0, 0.5);
-            border-radius: 5px;
+            text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+            border-radius: 25px;
             height: 20%;
             width: 30%;
             border: none;
-            border: 2px black;
-            border-radius: 5px;
+            border: 2px solid black;
             cursor: pointer;
         }
-        .form.button:hover{
-            translate:5px 5px;
+
+        .form.button:hover {
+            translate: 5px 5px;
             transition: 2000ms;
         }
 
