@@ -24,10 +24,12 @@ work effectively with people from diverse backgrounds
 
     <form class="form" action="https://formsubmit.co/faiqaliimran006@gmail.com" method="POST">
         <input type="hidden" name="_next" value="https://faiqali-max.github.io/faiqali-dev.github.io/">
+        <input type="hidden" name="_subject" value="New message from your portfolio">
+        <input type="hidden" name="_template" value="table">
         <p class="form p">Talk To Me</p>
-        <input class="form name" type="name" name="name" required placeholder="Your Name Here">
+        <input class="form name" type="text" name="name" required placeholder="Your Name Here">
         <input class="form email" type="email" name="email" required placeholder="Your Email Here">
-        <textarea class="form text" type="text" name="text" required placeholder="Your Message Here"></textarea>
+        <textarea class="form text" name="message" required placeholder="Your Message Here"></textarea>
         <button class="form button" type="submit">Send</button>
 
     </form>
@@ -219,11 +221,6 @@ work effectively with people from diverse backgrounds
         }
 
     </style>
-    <script>
-        document.querySelector('.form').addEventListener('submit', function () {
-            this.reset();
-        });
-    </script>
 </body>
 
 </html>
