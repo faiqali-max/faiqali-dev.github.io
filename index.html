@@ -22,15 +22,17 @@ work effectively with people from diverse backgrounds
         <button class="btn1" onclick="window.open('https://github.com/faiqali-max');">Check out my GitHub!</button>
         <button class="btn2" onclick="window.open('https://faiqali-portfolio.vercel.app');">Check out my Website</button>
 
-    <form class="form" action="https://formsubmit.co/faiqaliimran006@gmail.com" method="POST">
+    <form class="form" action="https://formsubmit.co/ajax/faiqaliimran006@gmail.com" method="POST">
         <input type="hidden" name="_next" value="https://faiqali-max.github.io/faiqali-dev.github.io/">
         <input type="hidden" name="_subject" value="New message from your portfolio">
         <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
         <p class="form p">Talk To Me</p>
         <input class="form name" type="text" name="name" required placeholder="Your Name Here">
         <input class="form email" type="email" name="email" required placeholder="Your Email Here">
         <textarea class="form text" name="message" required placeholder="Your Message Here"></textarea>
         <button class="form button" type="submit">Send</button>
+        <p class="form status" role="status"></p>
 
     </form>
     <style>
@@ -220,7 +222,43 @@ work effectively with people from diverse backgrounds
             transition: 2000ms;
         }
 
+        .form.status {
+            background-color: white;
+            color: #8240c9;
+            margin: 0;
+        }
+
     </style>
+    <script>
+        const contactForm = document.querySelector('form');
+        const formStatus = document.querySelector('.status');
+
+        contactForm.addEventListener('submit', async function (event) {
+            event.preventDefault();
+            formStatus.textContent = 'Sending...';
+
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: 'POST',
+                    body: new FormData(contactForm),
+                    headers: { Accept: 'application/json' }
+                });
+                const result = await response.json();
+
+                if (!response.ok || result.success !== 'true') {
+                    throw new Error('Message could not be sent.');
+                }
+
+                contactForm.reset();
+                formStatus.textContent = 'Message sent successfully.';
+                window.setTimeout(function () {
+                    window.location.href = 'https://faiqali-max.github.io/faiqali-dev.github.io/';
+                }, 1000);
+            } catch (error) {
+                formStatus.textContent = 'Could not send the message. Please try again.';
+            }
+        });
+    </script>
 </body>
 
 </html>
