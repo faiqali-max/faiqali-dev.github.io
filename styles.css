@@ -1,4 +1,3 @@
- <style>
         * {
             background: linear-gradient(135deg, #f5f3ff, #ddd6fe, #c4b5fd);
             font-family: Arial, sans-serif;
@@ -186,5 +185,3 @@
             translate: 5px 5px;
             transition: 2000ms;
         }
-
-    </style>
