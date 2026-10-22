@@ -9,20 +9,15 @@
 
 <body>
     <img class="logo"  src="fa.jpg" alt="Faiq Ali Logo">
-    <h1 class="head">Faiq Ali's Portal</h1>
-    <pre class="p">Hey! I'm <span>Faiq Ali</span>
-I'm a Freelancer and also a self-taught developer building my expertise in full-stack web development, generative AI, 
-agentic AI, AI-powered automation, and modern programming languages. My long-term goal is to advance into artificial intelligence 
-and machine learning while developing strong skills in AI engineering, DevOps, cybersecurity, and related technologies. 
-I am committed to continuous learning, practical problem-solving, and creating intelligent, reliable solutions that connect 
-software development with the possibilities of AI. I am also fluent in English, which allows me to communicate ideas clearly and 
-work effectively with people from diverse backgrounds        
-
+    <h1 class="head" id="head"></h1>
+    <h2 id="changed-text"></h2>
+    <pre class="p" id="p">        
+        I'm a Freelancer and also a self-taught developer building my expertise in full-stack web development, generative AI, agentic AI, AI-powered automation, and modern programming languages. My long-term goal is to advance into artificial intelligence and machine learning while developing strong skills in AI engineering, DevOps, cybersecurity, and related technologies. I am committed to continuous learning, practical problem-solving, and creating intelligent, reliable solutions that connect software development with the possibilities of AI. I am also fluent in English, which allows me to communicate ideas clearly and work effectively with people from diverse backgrounds.
     </pre>
         <button class="btn1" onclick="window.open('https://github.com/faiqali-max');">Check out my GitHub!</button>
         <button class="btn2" onclick="window.open('https://faiqali-portfolio.vercel.app');">Check out my Website</button>
 
-    <form class="form" action="https://formsubmit.co/faiqaliimran006@gmail.com" method="POST">
+   <form class="form" action="https://formsubmit.co/faiqaliimran006@gmail.com" method="POST">
     <!-- Redirect after submit -->
     <input type="hidden" name="_next" value="https://faiqali-max.github.io/faiqali-dev.github.io/">
     <!-- Email subject line -->
@@ -33,21 +28,17 @@ work effectively with people from diverse backgrounds
     <input type="hidden" name="_captcha" value="false">
 
     <p class="form p">Talk To Me</p>
-    <input class="form name" type="text" name="name" required placeholder="Your Name Here">
-    <input class="form email" type="email" name="email" required placeholder="Your Email Here">
-    <textarea class="form text" name="message" required placeholder="Your Message Here"></textarea>
+    <input type="name" class="form name" type="text" name="name" required placeholder="Your Name Here">
+    <input type="email" class="form email" type="email" name="email" required placeholder="Your Email Here">
+    <textarea type="text" class="form text" name="message" required placeholder="Your Message Here"></textarea>
     <button class="form button" type="submit">Send</button>
 </form>
     <style>
         * {
-            background-color: rgb(207, 149, 231);
+            background: linear-gradient(135deg, #f5f3ff, #ddd6fe, #c4b5fd);
             font-family: Arial, sans-serif;
             position: relative;
-            
-        }
-
-        body {
-            text-align: center;
+            text-align: center; 
         }
 
         .logo {
@@ -59,59 +50,67 @@ work effectively with people from diverse backgrounds
         }
 
         .head {
-            color: #7e10a9;
+            color: rgb(150,90,209);
             margin: 20px;
             padding: 20px;
+            border: none;
+            border-radius: 20px;
             font-size: 40px;
             font-weight: bold;
             justify-content: center;
             display: flex;
             flex-direction: column;
             align-items: center;
-            text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+            text-shadow: 5px 5px 10px rgba(150, 90, 209, 0.5);
         }
 
         .head:hover {
-            color: #8240c9;
+            translate: 5px 5px;
+            transition: 2000ms;
+        }
+        #changed-text{
+            color: rgb(150,90,209);
+            margin: 20px;
+            padding: 20px;
+            font-size: 30px;
+            font-weight: bold;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-shadow: 5px 5px 10px rgba(150, 90, 209, 0.5);
+            border: none;
+            border-radius: 17px;
+        }
+
+        #changed-text:hover{
             translate: 5px 5px;
             transition: 2000ms;
         }
 
         .p {
-            color: #101da9;
+            color: rgb(150,90,209);
             font-size: 25px;
             margin: 20px auto;
             padding: 20px;
             box-sizing: border-box;
             justify-content: center;
             display: flex;
-            text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+            text-shadow: 5px 5px 5px rgba(150, 90, 209, 0.5);
             flex-direction: column;
-            
+            white-space: pre-wrap;
             width: 90%;
-            overflow: scroll;
+            min-width: 360px;
+            overflow-wrap: anywhere;
             border: none;
-            background-color: white;
-            border: 5px solid black;
+            border: 5px solid rgb(150,90,209);
             border-radius: 20px;
-            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+            box-shadow: 10px 10px 20px rgba(150, 90, 209, 0.5);
+            font-size: clamp(1rem, 2.5vw, 1.4rem);
         }
 
-        .p span {
-            font-size: 35px;
-            box-shadow: 5px5px 5px rgba(0, 0, 0, 0.5);
-            background-color: white;
-            color: solid black;
-        }
 
         .p:hover {
-            color: red;
-            translate: 5px 5px;
-            transition: 2000ms;
-        }
-
-        .p span:hover {
-            color: green;
             translate: 5px 5px;
             transition: 2000ms;
         }
@@ -120,11 +119,11 @@ work effectively with people from diverse backgrounds
         .btn2 {
             border: none;
             background-color: #8240c9;
-            color: white;
+            color: rgb(150,90,209);
             margin: 20px;
             padding: 15px 30px;
             font-size: 16px;
-            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 5px 5px 5px rgba(150, 90, 209, 0.5);
             border-radius: 20px;
             cursor: pointer;
         }
@@ -134,16 +133,11 @@ work effectively with people from diverse backgrounds
         }
 
         .btn1:hover {
-            color: #8240c9;
-            background-color: #f2e9ff;
-            border-color: #8240c9;
             translate: 5px 5px;
             transition: 2000ms;
         }
 
         .btn2:hover {
-            color: #8240c9;
-            background-color: #f2e9ff;
             translate: 5px 5px;
             transition: 2000ms;
         }
@@ -151,18 +145,18 @@ work effectively with people from diverse backgrounds
         form {
             display: flex;
             flex-direction: column;
-            background-color: white;
-            color: white;
+            color: rgb(150,90,209);
             padding: 10px;
             align-items: center;
             margin: 20px auto 0;
             border: none;
-            border: 5px solid black;
+            border: 5px solid rgb(150,90,209);
             border-radius: 20px;
             height: 400px;
-            width: 400px;
+            width: 25%;
+            min-width: 360px;
             text-align: center;
-            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+            box-shadow: 10px 10px 20px rgba(150, 90, 209, 0.5);
         }
 
         .form:hover {
@@ -171,13 +165,13 @@ work effectively with people from diverse backgrounds
         }
 
         .form .p {
-            color: #8240c9;
+            color: rgb(150,90,209);
             font-size: 35px;
             font-weight: bold;
             width: 50%;
+            min-width: 320;
             border-radius: 15px;
-            text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-            background-color: white;
+            text-shadow: 5px 5px 5px rgba(150, 90, 209, 0.5);
         }
 
         .form .name,
@@ -190,12 +184,15 @@ work effectively with people from diverse backgrounds
             margin: 10px;
             padding: 10px;
             color: #f2e9ff;
-            background-color: #8240c9;
             height: 10%;
             width: 60%;
-            text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+            min-width: 320px;
+            text-shadow: 5px 5px 5px rgba(150, 90, 209, 0.5);
             border-radius: 10px;
-            border: 2px black;
+            border: 2px rgb(150,90,209);
+        }
+        ::placeholder{
+            color: rgb(150,90,209);
         }
 
         .form .text {
@@ -208,15 +205,15 @@ work effectively with people from diverse backgrounds
             text-align: center;
             margin: 10px;
             padding: 10px;
-            color: #f2e9ff;
+            color: rgb(150,90,209);
             font-size: 30px;
-            background-color: #8240c9;
-            text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+            text-shadow: 5px 5px 5px rgba(150, 90, 209, 0.5);
             border-radius: 25px;
             height: 20%;
             width: 30%;
+            min-width: 110;
             border: none;
-            border: 2px solid black;
+            border: 2px solid rgb(150,90,209);
             cursor: pointer;
         }
 
@@ -226,6 +223,22 @@ work effectively with people from diverse backgrounds
         }
 
     </style>
+     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed("#head", {
+      strings: ["FAIQ ALI'S PORTAL"],
+      typeSpeed: 100,
+      backSpeed: 100,
+      loop: true
+    });
+    var typed = new Typed("#changed-text", {
+      strings: ["HI, I'm Faiq Ali", "Developer","Freelancer"],
+      typeSpeed: 100,
+      backSpeed: 100,
+      loop: true
+    });
+  </script>
 </body>
+
 
 </html>
