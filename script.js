@@ -1,4 +1,3 @@
-<script>
     var typed = new Typed("#head", {
       strings: ["FAIQ ALI'S PORTAL"],
       typeSpeed: 100,
@@ -11,4 +10,4 @@
       backSpeed: 100,
       loop: true
     });
-  </script>
+
