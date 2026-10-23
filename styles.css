@@ -80,6 +80,21 @@
             translate: 5px 5px;
             transition: 2000ms;
         }
+        .all-github {
+            display: grid;
+            align-items: center;
+        }
+
+        .img {
+            height: 180px;
+            margin-bottom: 5px;
+        }
+
+        @media (max-width:800px) {
+            .img {
+                height: 140px;
+            }
+        }
 
         .btn1,
         .btn2 {
