@@ -17,6 +17,7 @@
             color: rgb(150,90,209);
             margin: 20px;
             padding: 20px;
+            height:50px;   
             border: none;
             border-radius: 20px;
             font-size: 40px;
@@ -36,6 +37,7 @@
             color: rgb(150,90,209);
             margin: 20px;
             padding: 20px;
+            height:50px;    
             font-size: 30px;
             font-weight: bold;
             justify-content: center;
